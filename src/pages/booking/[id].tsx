@@ -79,10 +79,10 @@ const BookingDetailPage: NextPage = () => {
     if (isLoading || !isHydrated) {
         return (
             <Layout>
-                <div className="flex justify-center items-center min-h-screen bg-amber-50">
+                <div className="flex justify-center items-center min-h-screen bg-emerald-50">
                     <div className="text-center">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data reservasi...
                         </p>
                     </div>
@@ -94,11 +94,11 @@ const BookingDetailPage: NextPage = () => {
     if (error) {
         return (
             <Layout>
-                <div className="min-h-screen bg-amber-50 py-16 px-4">
+                <div className="min-h-screen bg-emerald-50 py-16 px-4">
                     <div className="container mx-auto max-w-3xl">
                         <div className="bg-white p-8 rounded-lg shadow-md text-center">
                             <h1
-                                className={`text-2xl font-extrabold text-amber-900 mb-4`}
+                                className={`text-2xl font-extrabold text-emerald-900 mb-4`}
                             >
                                 Gagal Memuat Data
                             </h1>
@@ -108,7 +108,7 @@ const BookingDetailPage: NextPage = () => {
                             </p>
                             <Link
                                 href="/profile/bookings"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium"
                             >
                                 Kembali ke Daftar Reservasi
                             </Link>
@@ -140,11 +140,11 @@ const BookingDetailPage: NextPage = () => {
                 />
             </Head>
 
-            <section className="py-12 px-4 bg-amber-50 min-h-screen">
+            <section className="py-12 px-4 bg-emerald-50 min-h-screen">
                 <div className="container mx-auto max-w-3xl">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                         {/* Header */}
-                        <div className="bg-amber-600 p-6">
+                        <div className="bg-emerald-600 p-6">
                             <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                                 <div>
                                     <h1
@@ -152,7 +152,7 @@ const BookingDetailPage: NextPage = () => {
                                     >
                                         Detail Reservasi
                                     </h1>
-                                    <p className="text-amber-100 mt-1">
+                                    <p className="text-emerald-100 mt-1">
                                         ID:
                                         {booking?.id
                                             .substring(0, 8)
@@ -175,13 +175,13 @@ const BookingDetailPage: NextPage = () => {
                                 <div className="space-y-6">
                                     <div>
                                         <h2
-                                            className={`text-xl font-bold text-amber-900 mb-4`}
+                                            className={`text-xl font-bold text-emerald-900 mb-4`}
                                         >
                                             Informasi Reservasi
                                         </h2>
                                         <div className="space-y-4">
                                             <div className="flex items-start">
-                                                <Calendar className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                                <Calendar className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                                 <div>
                                                     <p className="text-gray-600 text-sm">
                                                         Tanggal
@@ -198,7 +198,7 @@ const BookingDetailPage: NextPage = () => {
                                                 </div>
                                             </div>
                                             <div className="flex items-start">
-                                                <Clock className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                                <Clock className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                                 <div>
                                                     <p className="text-gray-600 text-sm">
                                                         Waktu
@@ -221,7 +221,7 @@ const BookingDetailPage: NextPage = () => {
                                                 </div>
                                             </div>
                                             <div className="flex items-start">
-                                                <Users className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                                <Users className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                                 <div>
                                                     <p className="text-gray-600 text-sm">
                                                         Jumlah Tamu
@@ -233,7 +233,7 @@ const BookingDetailPage: NextPage = () => {
                                                 </div>
                                             </div>
                                             <div className="flex items-start">
-                                                <MapPin className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                                <MapPin className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                                 <div>
                                                     <p className="text-gray-600 text-sm">
                                                         Nomor Meja
@@ -262,7 +262,7 @@ const BookingDetailPage: NextPage = () => {
                                 <div className="space-y-6">
                                     <div>
                                         <h2
-                                            className={`text-xl font-bold text-amber-900 mb-4`}
+                                            className={`text-xl font-bold text-emerald-900 mb-4`}
                                         >
                                             Informasi Pemesan
                                         </h2>
@@ -297,7 +297,7 @@ const BookingDetailPage: NextPage = () => {
                                     {booking?.specialRequest && (
                                         <div>
                                             <div className="flex items-start">
-                                                <FileText className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                                <FileText className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                                 <div>
                                                     <p className="text-gray-600 text-sm">
                                                         Permintaan Khusus
@@ -319,7 +319,7 @@ const BookingDetailPage: NextPage = () => {
                             <div className="mt-8 flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href="/profile/bookings"
-                                    className="bg-white hover:bg-gray-100 text-amber-900 border border-amber-300 px-6 py-3 rounded-md font-medium text-center"
+                                    className="bg-white hover:bg-gray-100 text-emerald-900 border border-emerald-300 px-6 py-3 rounded-md font-medium text-center"
                                 >
                                     Kembali ke Daftar Reservasi
                                 </Link>

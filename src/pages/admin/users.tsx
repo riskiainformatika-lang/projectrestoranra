@@ -166,13 +166,13 @@ const UserManagementPage: NextPage = () => {
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
                     <h1
-                        className={`text-2xl font-extrabold text-amber-900 mb-4 md:mb-0`}
+                        className={`text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0`}
                     >
                         Kelola Pengguna
                     </h1>
                     <Link
                         href="/admin/dashboard"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <Clock className="h-4 w-4 mr-2" />
                         Kembali ke Dashboard
@@ -198,7 +198,7 @@ const UserManagementPage: NextPage = () => {
                                             | "ALL"
                                     )
                                 }
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 pl-10 text-black"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 pl-10 text-black"
                             >
                                 <option value="ALL">Semua Role</option>
                                 <option value="ADMIN">Admin</option>
@@ -220,7 +220,7 @@ const UserManagementPage: NextPage = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder="Cari nama, email..."
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 pl-10"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 pl-10"
                             />
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                         </div>
@@ -230,8 +230,8 @@ const UserManagementPage: NextPage = () => {
                 {/* User List */}
                 {isLoading ? (
                     <div className="text-center py-10">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data pengguna...
                         </p>
                     </div>
@@ -239,23 +239,23 @@ const UserManagementPage: NextPage = () => {
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border-collapse">
                             <thead>
-                                <tr className="bg-amber-50">
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                <tr className="bg-emerald-50">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         ID
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Nama
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Email
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Role
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Tanggal Bergabung
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Aksi
                                     </th>
                                 </tr>
@@ -268,8 +268,8 @@ const UserManagementPage: NextPage = () => {
                                     >
                                         <td className="py-4 px-4 whitespace-nowrap">
                                             <div className="flex items-center">
-                                                <UserCheck className="h-4 w-4 text-amber-600 mr-2" />
-                                                <span className="font-medium text-amber-900">
+                                                <UserCheck className="h-4 w-4 text-emerald-600 mr-2" />
+                                                <span className="font-medium text-emerald-900">
                                                     {user.id
                                                         .substring(0, 8)
                                                         .toUpperCase()}
@@ -385,7 +385,7 @@ const UserManagementPage: NextPage = () => {
                                                     onClick={() =>
                                                         handleStartEdit(user)
                                                     }
-                                                    className="inline-flex items-center px-2.5 py-1.5 bg-amber-50 text-amber-800 rounded hover:bg-amber-100 text-sm"
+                                                    className="inline-flex items-center px-2.5 py-1.5 bg-emerald-50 text-emerald-800 rounded hover:bg-emerald-100 text-sm"
                                                 >
                                                     <UserCog className="h-4 w-4 mr-1" />
                                                     Ubah Role
@@ -398,8 +398,8 @@ const UserManagementPage: NextPage = () => {
                         </table>
                     </div>
                 ) : (
-                    <div className="text-center py-10 bg-amber-50 rounded-lg">
-                        <p className="text-amber-800">
+                    <div className="text-center py-10 bg-emerald-50 rounded-lg">
+                        <p className="text-emerald-800">
                             {users && users.length > 0
                                 ? "Tidak ada pengguna yang cocok dengan filter"
                                 : "Tidak ada pengguna yang tersedia"}
@@ -425,7 +425,7 @@ const UserManagementPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === 1
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Sebelumnya
@@ -440,8 +440,8 @@ const UserManagementPage: NextPage = () => {
                                             }
                                             className={`px-3 py-1 rounded ${
                                                 currentPage === idx + 1
-                                                    ? "bg-amber-500 text-white"
-                                                    : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                                    ? "bg-emerald-500 text-white"
+                                                    : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                             }`}
                                         >
                                             {idx + 1}
@@ -455,7 +455,7 @@ const UserManagementPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === totalPages
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Selanjutnya

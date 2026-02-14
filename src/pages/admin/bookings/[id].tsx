@@ -87,8 +87,8 @@ const AdminBookingDetailPage: NextPage = () => {
             <AdminLayout>
                 <div className="flex justify-center items-center min-h-screen bg-gray-50">
                     <div className="text-center">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data reservasi...
                         </p>
                     </div>
@@ -109,12 +109,12 @@ const AdminBookingDetailPage: NextPage = () => {
 
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 className="text-2xl font-extrabold text-amber-900 mb-4 md:mb-0">
+                    <h1 className="text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0">
                         Detail Reservasi
                     </h1>
                     <Link
                         href="/admin/bookings"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <ArrowLeft className="h-4 w-4 mr-2" />
                         Kembali ke Daftar Reservasi
@@ -139,13 +139,13 @@ const AdminBookingDetailPage: NextPage = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left Column: Reservation Details */}
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <h2 className="text-xl font-bold text-amber-900 mb-4 pb-2 border-b border-gray-200">
+                        <h2 className="text-xl font-bold text-emerald-900 mb-4 pb-2 border-b border-gray-200">
                             Informasi Reservasi
                         </h2>
 
                         <div className="space-y-4 mt-4">
                             <div className="flex items-start">
-                                <Calendar className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Calendar className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Tanggal
@@ -162,7 +162,7 @@ const AdminBookingDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Clock className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Clock className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Waktu
@@ -183,7 +183,7 @@ const AdminBookingDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Users className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Users className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Jumlah Tamu
@@ -195,13 +195,13 @@ const AdminBookingDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <MapPin className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <MapPin className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Meja
                                     </p>
                                     <p className="text-gray-900 font-medium">
-                                        <span className="px-2 py-1 bg-amber-50 text-amber-800 rounded-md text-sm">
+                                        <span className="px-2 py-1 bg-emerald-50 text-emerald-800 rounded-md text-sm">
                                             Meja #{booking?.table.tableNumber}
                                         </span>
                                         <span className="text-gray-500 text-sm ml-2">
@@ -214,7 +214,7 @@ const AdminBookingDetailPage: NextPage = () => {
 
                             {booking?.specialRequest && (
                                 <div className="flex items-start pt-2 mt-2 border-t border-gray-200">
-                                    <FileText className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                    <FileText className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                     <div>
                                         <p className="text-gray-600 text-sm">
                                             Permintaan Khusus
@@ -230,7 +230,7 @@ const AdminBookingDetailPage: NextPage = () => {
 
                     {/* Right Column: Customer Details */}
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <h2 className="text-xl font-bold text-amber-900 mb-4 pb-2 border-b border-gray-200">
+                        <h2 className="text-xl font-bold text-emerald-900 mb-4 pb-2 border-b border-gray-200">
                             Informasi Pelanggan
                         </h2>
 
@@ -297,7 +297,7 @@ const AdminBookingDetailPage: NextPage = () => {
 
                 {/* Action Buttons */}
                 <div className="mt-8 border-t border-gray-200 pt-6">
-                    <h3 className="text-lg font-semibold text-amber-900 mb-4">
+                    <h3 className="text-lg font-semibold text-emerald-900 mb-4">
                         Tindakan
                     </h3>
                     <div className="flex flex-wrap gap-3">
@@ -348,34 +348,34 @@ const AdminBookingDetailPage: NextPage = () => {
                 </div>
 
                 {/* Notes from Admin */}
-                <div className="mt-8 bg-amber-50 p-6 rounded-lg">
-                    <h3 className="text-lg font-semibold text-amber-900 mb-4">
+                <div className="mt-8 bg-emerald-50 p-6 rounded-lg">
+                    <h3 className="text-lg font-semibold text-emerald-900 mb-4">
                         Panduan untuk Staff
                     </h3>
                     <ul className="space-y-2 text-gray-700">
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Pastikan meja telah disiapkan 10 menit sebelum
                                 waktu reservasi.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Hubungi pelanggan jika mereka terlambat lebih
                                 dari 15 menit.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Jika pelanggan memiliki permintaan khusus,
                                 informasikan kepada chef dan tim dapur.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Tandai reservasi sebagai {`'Selesai'`} hanya
                                 setelah pelanggan meninggalkan restoran.

@@ -147,7 +147,7 @@ const NewBookingForm = ({
     return (
         <div className="bg-white p-8 rounded-lg shadow-md">
             <h2
-                className={`text-2xl font-extrabold text-amber-900 mb-6 text-center`}
+                className={`text-2xl font-extrabold text-emerald-900 mb-6 text-center`}
             >
                 Form Reservasi
             </h2>
@@ -176,7 +176,7 @@ const NewBookingForm = ({
                                 dateFormat="dd MMMM yyyy"
                                 minDate={new Date()}
                                 locale={id}
-                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-black"
+                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black"
                                 placeholderText="Pilih tanggal"
                             />
                         )}
@@ -214,7 +214,7 @@ const NewBookingForm = ({
                                 timeCaption="Waktu"
                                 dateFormat="HH:mm"
                                 // includeTimes={timeOptions}
-                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-black"
+                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black"
                                 placeholderText="Pilih waktu"
                             />
                         )}
@@ -238,7 +238,7 @@ const NewBookingForm = ({
                         {...register("guestCount", {
                             valueAsNumber: true,
                         })}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-black"
+                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black"
                     >
                         {[...Array(20)].map((_, i) => (
                             <option key={i + 1} value={i + 1}>
@@ -265,7 +265,7 @@ const NewBookingForm = ({
                         availableTables.length > 0 ? (
                             <select
                                 {...register("tableId")}
-                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-black"
+                                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-black"
                             >
                                 {availableTables.map((table) => (
                                     <option key={table.id} value={table.id}>
@@ -282,7 +282,7 @@ const NewBookingForm = ({
                             </div>
                         )
                     ) : (
-                        <div className="p-3 bg-amber-50 text-amber-700 rounded-md">
+                        <div className="p-3 bg-emerald-50 text-emerald-700 rounded-md">
                             Silakan pilih tanggal, waktu, dan jumlah tamu
                             terlebih dahulu.
                         </div>
@@ -304,7 +304,7 @@ const NewBookingForm = ({
                     </label>
                     <textarea
                         {...register("specialRequest")}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 h-32"
+                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 h-32"
                         placeholder="Jika Anda memiliki permintaan khusus, silakan tuliskan di sini..."
                     />
                 </div>
@@ -322,7 +322,7 @@ const NewBookingForm = ({
                         createBookingMutation.isPending ||
                         availableTables.length === 0
                             ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-amber-600 hover:bg-amber-700"
+                            : "bg-emerald-600 hover:bg-emerald-700"
                     }`}
                     >
                         {createBookingMutation.isPending ? (

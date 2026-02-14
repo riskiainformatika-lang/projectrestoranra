@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
         >
             <div className="w-full max-w-md bg-white rounded-lg shadow-xl overflow-hidden">
                 <div className="p-4 border-b border-gray-200 flex justify-between items-center">
-                    <h3 className="text-lg font-medium text-amber-900">
+                    <h3 className="text-lg font-medium text-emerald-900">
                         {title}
                     </h3>
                     <button

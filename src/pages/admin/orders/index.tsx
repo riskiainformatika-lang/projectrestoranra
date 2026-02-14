@@ -162,12 +162,12 @@ const AdminOrdersPage: NextPage = () => {
 
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 className="text-2xl font-extrabold text-amber-900 mb-4 md:mb-0">
+                    <h1 className="text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0">
                         Kelola Pesanan
                     </h1>
                     <Link
                         href="/admin/dashboard"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <Clock className="h-4 w-4 mr-2" />
                         Kembali ke Dashboard
@@ -184,7 +184,7 @@ const AdminOrdersPage: NextPage = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder="Cari pesanan berdasarkan nama pelanggan atau nomor meja..."
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 pl-10"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 pl-10"
                             />
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                         </div>
@@ -199,7 +199,7 @@ const AdminOrdersPage: NextPage = () => {
                                     e.target.value as OrderStatus | "ALL"
                                 )
                             }
-                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                         >
                             <option value="ALL">Semua Status</option>
                             <option value="PENDING">Menunggu</option>
@@ -212,7 +212,7 @@ const AdminOrdersPage: NextPage = () => {
                     {/* Add Order Button */}
                     <Link
                         href="/admin/orders/add"
-                        className="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700"
+                        className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700"
                     >
                         <PlusCircle className="h-4 w-4 mr-2" />
                         Tambah Pesanan Baru
@@ -222,8 +222,8 @@ const AdminOrdersPage: NextPage = () => {
                 {/* Orders List */}
                 {isLoading ? (
                     <div className="text-center py-10">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data pesanan...
                         </p>
                     </div>
@@ -231,29 +231,29 @@ const AdminOrdersPage: NextPage = () => {
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border-collapse">
                             <thead>
-                                <tr className="bg-amber-50">
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                <tr className="bg-emerald-50">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         ID Pesanan
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Pelanggan
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Meja
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Tanggal & Waktu
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Item
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Total
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Status
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Aksi
                                     </th>
                                 </tr>
@@ -266,8 +266,8 @@ const AdminOrdersPage: NextPage = () => {
                                     >
                                         <td className="py-4 px-4 whitespace-nowrap">
                                             <div className="flex items-center">
-                                                <ShoppingCart className="h-4 w-4 text-amber-600 mr-2" />
-                                                <span className="font-medium text-amber-900">
+                                                <ShoppingCart className="h-4 w-4 text-emerald-600 mr-2" />
+                                                <span className="font-medium text-emerald-900">
                                                     {order.id
                                                         .substring(0, 8)
                                                         .toUpperCase()}
@@ -344,7 +344,7 @@ const AdminOrdersPage: NextPage = () => {
                                             <div className="flex space-x-2">
                                                 <Link
                                                     href={`/admin/orders/${order.id}`}
-                                                    className="inline-flex items-center px-2.5 py-1.5 bg-amber-50 text-amber-800 rounded hover:bg-amber-100"
+                                                    className="inline-flex items-center px-2.5 py-1.5 bg-emerald-50 text-emerald-800 rounded hover:bg-emerald-100"
                                                 >
                                                     <Edit className="h-4 w-4 mr-1" />
                                                     Detail
@@ -423,16 +423,16 @@ const AdminOrdersPage: NextPage = () => {
                         </table>
                     </div>
                 ) : (
-                    <div className="text-center py-10 bg-amber-50 rounded-lg">
-                        <ShoppingCart className="h-10 w-10 text-amber-600 mx-auto mb-2" />
-                        <p className="text-amber-800">
+                    <div className="text-center py-10 bg-emerald-50 rounded-lg">
+                        <ShoppingCart className="h-10 w-10 text-emerald-600 mx-auto mb-2" />
+                        <p className="text-emerald-800">
                             {searchTerm || statusFilter !== "ALL"
                                 ? "Tidak ada pesanan yang cocok dengan pencarian atau filter Anda"
                                 : "Belum ada pesanan yang tersedia"}
                         </p>
                         <Link
                             href="/admin/orders/add"
-                            className="mt-4 inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700"
+                            className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700"
                         >
                             <PlusCircle className="h-4 w-4 mr-2" />
                             Tambah Pesanan Baru
@@ -458,7 +458,7 @@ const AdminOrdersPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === 1
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Sebelumnya
@@ -473,8 +473,8 @@ const AdminOrdersPage: NextPage = () => {
                                             }
                                             className={`px-3 py-1 rounded ${
                                                 currentPage === idx + 1
-                                                    ? "bg-amber-500 text-white"
-                                                    : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                                    ? "bg-emerald-500 text-white"
+                                                    : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                             }`}
                                         >
                                             {idx + 1}
@@ -488,7 +488,7 @@ const AdminOrdersPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === totalPages
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Selanjutnya

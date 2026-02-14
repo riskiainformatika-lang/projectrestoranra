@@ -21,7 +21,7 @@ const RecentBooking = ({
     return (
         <div className="flex items-center justify-between py-3">
             <div className="flex items-center">
-                <div className="h-8 w-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-medium">
+                <div className="h-8 w-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-medium">
                     {name.charAt(0)}
                 </div>
                 <div className="ml-3">

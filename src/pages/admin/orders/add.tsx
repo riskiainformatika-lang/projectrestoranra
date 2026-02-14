@@ -188,12 +188,12 @@ const AddOrderPage: NextPage = () => {
 
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 className="text-2xl font-extrabold text-amber-900 mb-4 md:mb-0">
+                    <h1 className="text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0">
                         Tambah Pesanan Baru
                     </h1>
                     <Link
                         href="/admin/orders"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <ChevronLeft className="h-4 w-4 mr-2" />
                         Kembali ke Daftar Pesanan
@@ -202,8 +202,8 @@ const AddOrderPage: NextPage = () => {
 
                 {isLoading ? (
                     <div className="text-center py-10">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">Memuat data...</p>
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">Memuat data...</p>
                     </div>
                 ) : (
                     <form
@@ -211,8 +211,8 @@ const AddOrderPage: NextPage = () => {
                         className="space-y-6"
                     >
                         {/* Booking Selection Card */}
-                        <div className="bg-amber-50 p-5 rounded-lg border border-amber-200">
-                            <h2 className="text-lg font-medium text-amber-800 mb-4 flex items-center">
+                        <div className="bg-emerald-50 p-5 rounded-lg border border-emerald-200">
+                            <h2 className="text-lg font-medium text-emerald-800 mb-4 flex items-center">
                                 <CalendarClock className="h-5 w-5 mr-2" />
                                 Pilih Reservasi
                             </h2>
@@ -223,7 +223,7 @@ const AddOrderPage: NextPage = () => {
                                 </label>
                                 <select
                                     {...register("bookingId")}
-                                    className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50"
+                                    className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
                                 >
                                     <option value="">
                                         -- Pilih Reservasi --
@@ -249,19 +249,19 @@ const AddOrderPage: NextPage = () => {
                             </div>
 
                             {selectedBooking && (
-                                <div className="bg-white p-4 rounded-md border border-amber-100 mt-4">
-                                    <h3 className="font-medium text-amber-800 mb-2">
+                                <div className="bg-white p-4 rounded-md border border-emerald-100 mt-4">
+                                    <h3 className="font-medium text-emerald-800 mb-2">
                                         Detail Reservasi:
                                     </h3>
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                         <div className="flex items-center">
-                                            <User className="h-4 w-4 text-amber-600 mr-2" />
+                                            <User className="h-4 w-4 text-emerald-600 mr-2" />
                                             <span className="text-gray-700">
                                                 {selectedBooking.user.name}
                                             </span>
                                         </div>
                                         <div className="flex items-center">
-                                            <Clock className="h-4 w-4 text-amber-600 mr-2" />
+                                            <Clock className="h-4 w-4 text-emerald-600 mr-2" />
                                             <span className="text-gray-700">
                                                 {new Date(
                                                     selectedBooking.dateTime
@@ -269,13 +269,13 @@ const AddOrderPage: NextPage = () => {
                                             </span>
                                         </div>
                                         <div className="flex items-center">
-                                            <Table2 className="h-4 w-4 text-amber-600 mr-2" />
+                                            <Table2 className="h-4 w-4 text-emerald-600 mr-2" />
                                             <span className="text-gray-700">
                                                 {`Meja #${selectedBooking.table.tableNumber}`}
                                             </span>
                                         </div>
                                         <div className="flex items-center">
-                                            <Users className="h-4 w-4 text-amber-600 mr-2" />
+                                            <Users className="h-4 w-4 text-emerald-600 mr-2" />
                                             <span className="text-gray-700">
                                                 {selectedBooking.guestCount}{" "}
                                                 orang
@@ -289,14 +289,14 @@ const AddOrderPage: NextPage = () => {
                         {/* Order Items Section */}
                         <div className="bg-white p-5 rounded-lg border border-gray-200">
                             <div className="flex justify-between items-center mb-4">
-                                <h2 className="text-lg font-medium text-amber-800 flex items-center">
+                                <h2 className="text-lg font-medium text-emerald-800 flex items-center">
                                     <ShoppingCart className="h-5 w-5 mr-2" />
                                     Item Pesanan
                                 </h2>
                                 <button
                                     type="button"
                                     onClick={addItem}
-                                    className="px-3 py-1.5 bg-amber-600 text-white rounded-md hover:bg-amber-700 flex items-center text-sm"
+                                    className="px-3 py-1.5 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 flex items-center text-sm"
                                 >
                                     <PlusCircle className="h-4 w-4 mr-1" />
                                     Tambah Item
@@ -309,7 +309,7 @@ const AddOrderPage: NextPage = () => {
                                     className="p-4 mb-4 border rounded-md bg-gray-50 hover:bg-gray-100 transition-colors"
                                 >
                                     <div className="flex justify-between items-center mb-3">
-                                        <h3 className="font-medium text-amber-700">
+                                        <h3 className="font-medium text-emerald-700">
                                             Item #{index + 1}
                                         </h3>
                                         <button
@@ -333,7 +333,7 @@ const AddOrderPage: NextPage = () => {
                                                 render={({ field }) => (
                                                     <select
                                                         {...field}
-                                                        className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50"
+                                                        className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
                                                     >
                                                         <option value="">
                                                             -- Pilih Menu --
@@ -404,7 +404,7 @@ const AddOrderPage: NextPage = () => {
                                                                 )
                                                             )
                                                         }
-                                                        className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50"
+                                                        className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
                                                     />
                                                 )}
                                             />
@@ -429,7 +429,7 @@ const AddOrderPage: NextPage = () => {
                                                     `items.${index}.notes`
                                                 )}
                                                 placeholder="Tanpa bawang, pedas, dll."
-                                                className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 focus:ring-opacity-50"
+                                                className="w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50"
                                             />
                                         </div>
                                     </div>
@@ -457,12 +457,12 @@ const AddOrderPage: NextPage = () => {
                             ))}
 
                             {/* Total Order Summary */}
-                            <div className="mt-6 bg-amber-50 p-4 rounded-md border border-amber-100">
+                            <div className="mt-6 bg-emerald-50 p-4 rounded-md border border-emerald-100">
                                 <div className="flex justify-between items-center">
-                                    <span className="font-medium text-amber-800">
+                                    <span className="font-medium text-emerald-800">
                                         Total Pesanan
                                     </span>
-                                    <span className="text-lg font-bold text-amber-900">
+                                    <span className="text-lg font-bold text-emerald-900">
                                         Rp {totalPrice.toLocaleString("id-ID")}
                                     </span>
                                 </div>
@@ -481,7 +481,7 @@ const AddOrderPage: NextPage = () => {
                             <button
                                 type="submit"
                                 disabled={isPending || isSubmitting}
-                                className="px-6 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700 disabled:bg-gray-400 flex items-center"
+                                className="px-6 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 disabled:bg-gray-400 flex items-center"
                             >
                                 {isPending && (
                                     <Loader2 className="animate-spin h-4 w-4 mr-2" />

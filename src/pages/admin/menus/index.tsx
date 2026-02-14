@@ -194,7 +194,7 @@ const AdminMenusPage: NextPage = () => {
             </Head>
 
             <div className="p-6 space-y-3 bg-white">
-                <h1 className="text-2xl font-bold text-amber-900">
+                <h1 className="text-2xl font-bold text-emerald-900">
                     Kelola Menu
                 </h1>
                 <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-2">
@@ -206,14 +206,14 @@ const AdminMenusPage: NextPage = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder="Cari menu berdasarkan nama..."
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 pl-10"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 pl-10"
                             />
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                         </div>
                     </div>
                     <button
                         onClick={handleAdd}
-                        className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-md w-full md:w-auto"
+                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md w-full md:w-auto"
                     >
                         Tambah Menu
                     </button>
@@ -224,28 +224,28 @@ const AdminMenusPage: NextPage = () => {
                     <div className="overflow-x-auto">
                         {menusLoading ? (
                             <div className="text-center py-10">
-                                <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                                <p className="mt-2 text-amber-800">
+                                <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                                <p className="mt-2 text-emerald-800">
                                     Memuat data pesanan...
                                 </p>
                             </div>
                         ) : (
                             <table className="min-w-full divide-y divide-gray-200">
-                                <thead className="bg-amber-50">
+                                <thead className="bg-emerald-50">
                                     <tr>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-amber-900 uppercase tracking-wider">
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-emerald-900 uppercase tracking-wider">
                                             Nama Menu
                                         </th>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-amber-900 uppercase tracking-wider">
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-emerald-900 uppercase tracking-wider">
                                             Kategori
                                         </th>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-amber-900 uppercase tracking-wider">
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-emerald-900 uppercase tracking-wider">
                                             Harga
                                         </th>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-amber-900 uppercase tracking-wider">
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-emerald-900 uppercase tracking-wider">
                                             Status
                                         </th>
-                                        <th className="px-6 py-3 text-right text-xs font-medium text-amber-900 uppercase tracking-wider">
+                                        <th className="px-6 py-3 text-right text-xs font-medium text-emerald-900 uppercase tracking-wider">
                                             Aksi
                                         </th>
                                     </tr>
@@ -254,7 +254,7 @@ const AdminMenusPage: NextPage = () => {
                                     {filteredMenus?.map((menu) => (
                                         <tr
                                             key={menu.id}
-                                            className="hover:bg-amber-50"
+                                            className="hover:bg-emerald-50"
                                         >
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
@@ -282,7 +282,7 @@ const AdminMenusPage: NextPage = () => {
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-amber-100 text-amber-800">
+                                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-emerald-100 text-emerald-800">
                                                     {menu.category.name}
                                                 </span>
                                             </td>
@@ -307,7 +307,7 @@ const AdminMenusPage: NextPage = () => {
                                                     onClick={() =>
                                                         handleEdit(menu)
                                                     }
-                                                    className="text-amber-600 hover:text-amber-900 mr-4"
+                                                    className="text-emerald-600 hover:text-emerald-900 mr-4"
                                                 >
                                                     Edit
                                                 </button>
@@ -431,7 +431,7 @@ const AdminMenusPage: NextPage = () => {
                         <input
                             type="checkbox"
                             id="isAvailable"
-                            className="h-4 w-4 text-amber-600 border-gray-300 rounded"
+                            className="h-4 w-4 text-emerald-600 border-gray-300 rounded"
                             {...register("isAvailable")}
                         />
                         <label
@@ -452,7 +452,7 @@ const AdminMenusPage: NextPage = () => {
                         </button>
                         <button
                             type="submit"
-                            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-amber-600 hover:bg-amber-700"
+                            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700"
                             disabled={
                                 createMenuMutation.isPending ||
                                 updateMenuMutation.isPending

@@ -73,7 +73,7 @@ const BookingPage: NextPage = () => {
 
             {/* Booking Info Section */}
             <motion.section
-                className="py-16 px-4 bg-amber-50"
+                className="py-16 px-4 bg-emerald-50"
                 ref={bookingInfoRef}
                 initial="hidden"
                 animate={bookingInfoInView ? "visible" : "hidden"}
@@ -85,7 +85,7 @@ const BookingPage: NextPage = () => {
                         variants={fadeInUp}
                     >
                         <motion.h2
-                            className={`text-2xl font-extrabold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-2xl font-extrabold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.2, duration: 0.7 }}
@@ -118,7 +118,7 @@ const BookingPage: NextPage = () => {
                                 transition: { duration: 0.2 },
                             }}
                         >
-                            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-800 mx-auto mb-4">
+                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 mx-auto mb-4">
                                 <motion.svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-8 w-8"
@@ -142,7 +142,7 @@ const BookingPage: NextPage = () => {
                                     />
                                 </motion.svg>
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Jam Operasional
                             </h3>
                             <p className="text-gray-600">
@@ -160,7 +160,7 @@ const BookingPage: NextPage = () => {
                                 transition: { duration: 0.2 },
                             }}
                         >
-                            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-800 mx-auto mb-4">
+                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 mx-auto mb-4">
                                 <motion.svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-8 w-8"
@@ -184,7 +184,7 @@ const BookingPage: NextPage = () => {
                                     />
                                 </motion.svg>
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Kapasitas
                             </h3>
                             <p className="text-gray-600">
@@ -202,7 +202,7 @@ const BookingPage: NextPage = () => {
                                 transition: { duration: 0.2 },
                             }}
                         >
-                            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-800 mx-auto mb-4">
+                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 mx-auto mb-4">
                                 <motion.svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-8 w-8"
@@ -228,7 +228,7 @@ const BookingPage: NextPage = () => {
                                     />
                                 </motion.svg>
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Kontak
                             </h3>
                             <p className="text-gray-600">
@@ -250,7 +250,7 @@ const BookingPage: NextPage = () => {
                         transition={{ delay: 0.6, duration: 0.8 }}
                     >
                         <motion.h3
-                            className={`text-2xl font-extrabold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-2xl font-extrabold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.8, duration: 0.5 }}
@@ -274,7 +274,7 @@ const BookingPage: NextPage = () => {
                         >
                             <Link
                                 href="/booking/new"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-md text-lg font-medium inline-block"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-md text-lg font-medium inline-block"
                             >
                                 <motion.span
                                     initial={{ x: -5, opacity: 0 }}
@@ -303,7 +303,7 @@ const BookingPage: NextPage = () => {
                         variants={fadeInUp}
                     >
                         <motion.h2
-                            className={`text-2xl font-extrabold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-2xl font-extrabold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={
                                 myBookingsInView
@@ -329,7 +329,7 @@ const BookingPage: NextPage = () => {
                     </motion.div>
 
                     <motion.div
-                        className="bg-amber-50 p-8 rounded-lg shadow-md text-center"
+                        className="bg-emerald-50 p-8 rounded-lg shadow-md text-center"
                         initial={{ opacity: 0, y: 30 }}
                         animate={
                             myBookingsInView
@@ -350,7 +350,7 @@ const BookingPage: NextPage = () => {
                         >
                             <Link
                                 href="/profile/bookings"
-                                className="bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-8 py-3 rounded-md text-lg font-medium inline-block"
+                                className="bg-emerald-100 hover:bg-emerald-200 text-emerald-900 border border-emerald-300 px-8 py-3 rounded-md text-lg font-medium inline-block"
                             >
                                 Lihat Reservasi Saya
                             </Link>

@@ -105,12 +105,12 @@ const AdminTablesPage: NextPage = () => {
 
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 className="text-2xl font-extrabold text-amber-900 mb-4 md:mb-0">
+                    <h1 className="text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0">
                         Kelola Meja
                     </h1>
                     <Link
                         href="/admin/dashboard"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <Clock className="h-4 w-4 mr-2" />
                         Kembali ke Dashboard
@@ -127,7 +127,7 @@ const AdminTablesPage: NextPage = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder="Cari meja berdasarkan nomor atau kapasitas..."
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 pl-10"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 pl-10"
                             />
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                         </div>
@@ -136,7 +136,7 @@ const AdminTablesPage: NextPage = () => {
                     {/* Add Table Button */}
                     <button
                         onClick={() => setIsAddModalOpen(true)}
-                        className="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700"
+                        className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700"
                     >
                         <PlusCircle className="h-4 w-4 mr-2" />
                         Tambah Meja Baru
@@ -146,8 +146,8 @@ const AdminTablesPage: NextPage = () => {
                 {/* Table List */}
                 {isLoading ? (
                     <div className="text-center py-10">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data meja...
                         </p>
                     </div>
@@ -155,17 +155,17 @@ const AdminTablesPage: NextPage = () => {
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white border-collapse">
                             <thead>
-                                <tr className="bg-amber-50">
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                <tr className="bg-emerald-50">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Nomor Meja
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Kapasitas
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Status
                                     </th>
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Aksi
                                     </th>
                                 </tr>
@@ -178,7 +178,7 @@ const AdminTablesPage: NextPage = () => {
                                     >
                                         <td className="py-4 px-4 whitespace-nowrap">
                                             <div className="flex items-center">
-                                                <div className="h-8 w-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-medium">
+                                                <div className="h-8 w-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-medium">
                                                     {table.tableNumber}
                                                 </div>
                                                 <span className="ml-3 font-medium text-gray-900">
@@ -212,7 +212,7 @@ const AdminTablesPage: NextPage = () => {
                                                 onClick={() =>
                                                     handleEditTable(table)
                                                 }
-                                                className="inline-flex items-center px-2.5 py-1.5 bg-amber-50 text-amber-800 rounded hover:bg-amber-100"
+                                                className="inline-flex items-center px-2.5 py-1.5 bg-emerald-50 text-emerald-800 rounded hover:bg-emerald-100"
                                             >
                                                 <Edit className="h-4 w-4 mr-1" />
                                                 Edit
@@ -233,16 +233,16 @@ const AdminTablesPage: NextPage = () => {
                         </table>
                     </div>
                 ) : (
-                    <div className="text-center py-10 bg-amber-50 rounded-lg">
-                        <Table2 className="h-10 w-10 text-amber-600 mx-auto mb-2" />
-                        <p className="text-amber-800">
+                    <div className="text-center py-10 bg-emerald-50 rounded-lg">
+                        <Table2 className="h-10 w-10 text-emerald-600 mx-auto mb-2" />
+                        <p className="text-emerald-800">
                             {searchTerm
                                 ? "Tidak ada meja yang cocok dengan pencarian Anda"
                                 : "Belum ada meja yang tersedia"}
                         </p>
                         <button
                             onClick={() => setIsAddModalOpen(true)}
-                            className="mt-4 inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700"
+                            className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700"
                         >
                             <PlusCircle className="h-4 w-4 mr-2" />
                             Tambah Meja Baru
@@ -268,7 +268,7 @@ const AdminTablesPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === 1
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Sebelumnya
@@ -283,8 +283,8 @@ const AdminTablesPage: NextPage = () => {
                                             }
                                             className={`px-3 py-1 rounded ${
                                                 currentPage === idx + 1
-                                                    ? "bg-amber-500 text-white"
-                                                    : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                                    ? "bg-emerald-500 text-white"
+                                                    : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                             }`}
                                         >
                                             {idx + 1}
@@ -298,7 +298,7 @@ const AdminTablesPage: NextPage = () => {
                                 className={`px-3 py-1 rounded ${
                                     currentPage === totalPages
                                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                 }`}
                             >
                                 Selanjutnya

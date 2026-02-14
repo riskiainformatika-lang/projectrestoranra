@@ -153,7 +153,7 @@ const MenuPage: NextPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeInVariant}
-                className="pt-12 pb-24 px-4 bg-amber-50"
+                className="pt-12 pb-24 px-4 bg-emerald-50"
             >
                 <div className="container mx-auto">
                     {/* Category Filter */}
@@ -164,7 +164,7 @@ const MenuPage: NextPage = () => {
                         className="mb-10"
                     >
                         <h2
-                            className={`text-3xl font-bold text-amber-900 text-center mb-8 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 text-center mb-8 ${playfair.className}`}
                         >
                             Pilih Kategori
                         </h2>
@@ -181,8 +181,8 @@ const MenuPage: NextPage = () => {
                                 className={`px-5 py-2 rounded-md text-sm font-medium transition-colors 
                                 ${
                                     selectedCategory === "all"
-                                        ? "bg-amber-600 text-white"
-                                        : "bg-white text-amber-800 hover:bg-amber-100"
+                                        ? "bg-emerald-600 text-white"
+                                        : "bg-white text-emerald-800 hover:bg-emerald-100"
                                 }`}
                             >
                                 Semua Menu
@@ -199,8 +199,8 @@ const MenuPage: NextPage = () => {
                                     className={`px-5 py-2 rounded-md text-sm font-medium transition-colors 
                                     ${
                                         selectedCategory === category.id
-                                            ? "bg-amber-600 text-white"
-                                            : "bg-white text-amber-800 hover:bg-amber-100"
+                                            ? "bg-emerald-600 text-white"
+                                            : "bg-white text-emerald-800 hover:bg-emerald-100"
                                     }`}
                                 >
                                     {category.name}
@@ -216,20 +216,20 @@ const MenuPage: NextPage = () => {
                             animate={{ opacity: 1 }}
                             className="text-center py-12"
                         >
-                            <div className="inline-block h-10 w-10 animate-spin rounded-full border-4 border-amber-600 border-t-transparent"></div>
-                            <p className="mt-4 text-amber-800">
+                            <div className="inline-block h-10 w-10 animate-spin rounded-full border-4 border-emerald-600 border-t-transparent"></div>
+                            <p className="mt-4 text-emerald-800">
                                 Memuat menu...
                             </p>
                         </motion.div>
-                    ) : (paginatedMenuItems as MenuWithCategory[]).length ===
+                    ) : ((paginatedMenuItems as MenuWithCategory[]) || []).length ===
                       0 ? (
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             className="text-center py-12"
                         >
-                            <div className="inline-block h-10 w-10 animate-spin rounded-full border-4 border-amber-600 border-t-transparent"></div>
-                            <p className="mt-4 text-amber-800">
+                            <div className="inline-block h-10 w-10 animate-spin rounded-full border-4 border-emerald-600 border-t-transparent"></div>
+                            <p className="mt-4 text-emerald-800">
                                 Memuat menu...
                             </p>
                         </motion.div>
@@ -267,8 +267,8 @@ const MenuPage: NextPage = () => {
                                                         objectFit="cover"
                                                     />
                                                 ) : (
-                                                    <div className="h-full bg-amber-200 flex items-center justify-center">
-                                                        <span className="text-amber-800">
+                                                    <div className="h-full bg-emerald-200 flex items-center justify-center">
+                                                        <span className="text-emerald-800">
                                                             No Image
                                                         </span>
                                                     </div>
@@ -287,13 +287,13 @@ const MenuPage: NextPage = () => {
                                                             0.2 + index * 0.1,
                                                         duration: 0.5,
                                                     }}
-                                                    className="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm"
+                                                    className="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm"
                                                 >
                                                     {menu.category.name}
                                                 </motion.div>
                                             </div>
                                             <div className="p-5">
-                                                <h3 className="text-xl font-bold text-amber-900">
+                                                <h3 className="text-xl font-bold text-emerald-900">
                                                     {menu.name}
                                                 </h3>
                                                 <p className="text-gray-600 mt-2 text-sm line-clamp-2">
@@ -308,7 +308,7 @@ const MenuPage: NextPage = () => {
                                                     }}
                                                     className="mt-4 flex items-center justify-between"
                                                 >
-                                                    <span className="text-lg font-bold text-amber-700">
+                                                    <span className="text-lg font-bold text-emerald-700">
                                                         {`Rp. ${menu.price.toLocaleString(
                                                             "id-ID"
                                                         )}`}
@@ -374,7 +374,7 @@ const MenuPage: NextPage = () => {
                                     className={`px-3 py-1 rounded ${
                                         currentPage === 1
                                             ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                            : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                            : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                     }`}
                                 >
                                     Sebelumnya
@@ -391,8 +391,8 @@ const MenuPage: NextPage = () => {
                                                 }
                                                 className={`px-3 py-1 rounded ${
                                                     currentPage === idx + 1
-                                                        ? "bg-amber-500 text-white"
-                                                        : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                                        ? "bg-emerald-500 text-white"
+                                                        : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                                 }`}
                                                 initial={
                                                     currentPage === idx + 1
@@ -433,7 +433,7 @@ const MenuPage: NextPage = () => {
                                     className={`px-3 py-1 rounded ${
                                         currentPage === totalPages
                                             ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                                            : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                                            : "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
                                     }`}
                                 >
                                     Selanjutnya

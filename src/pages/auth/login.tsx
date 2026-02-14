@@ -73,7 +73,7 @@ const Login: NextPage = () => {
                                 id="email"
                                 autoComplete="email"
                                 {...register("email")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                             />
                             {formState.errors.email && (
                                 <p className="mt-1 text-sm text-red-600">
@@ -94,7 +94,7 @@ const Login: NextPage = () => {
                                 id="password"
                                 autoComplete="current-password"
                                 {...register("password")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                             />
                             {formState.errors.password && (
                                 <p className="mt-1 text-sm text-red-600">
@@ -116,7 +116,7 @@ const Login: NextPage = () => {
                             <button
                                 type="submit"
                                 disabled={isPending}
-                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 mb-3"
+                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 mb-3"
                             >
                                 {isPending ? "Loading..." : "Login"}
                             </button>
@@ -127,7 +127,7 @@ const Login: NextPage = () => {
                                 Belum punya akun?{" "}
                                 <Link
                                     href="/auth/register"
-                                    className="font-medium text-amber-600 hover:text-amber-500"
+                                    className="font-medium text-emerald-600 hover:text-emerald-500"
                                 >
                                     Daftar di sini
                                 </Link>

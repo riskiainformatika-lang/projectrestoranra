@@ -35,7 +35,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                             className="flex items-center"
                         >
                             <h1
-                                className={`text-xl font-bold text-amber-900 ${playfair.className}`}
+                                className={`text-xl font-bold text-emerald-900 ${playfair.className}`}
                             >
                                 Nusa Rasa Resto
                             </h1>
@@ -51,14 +51,14 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                                     href={item.href}
                                     className={`flex items-center px-4 py-3 text-sm font-medium rounded-md group ${
                                         isActive(item.href)
-                                            ? "bg-amber-100 text-amber-900"
-                                            : "text-gray-700 hover:bg-amber-50"
+                                            ? "bg-emerald-100 text-emerald-900"
+                                            : "text-gray-700 hover:bg-emerald-50"
                                     }`}
                                 >
                                     <span
                                         className={`mr-3 ${
                                             isActive(item.href)
-                                                ? "text-amber-700"
+                                                ? "text-emerald-700"
                                                 : "text-gray-500"
                                         }`}
                                     >
@@ -74,7 +74,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                     <div className="flex flex-col px-4 py-4 border-t border-gray-200">
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
-                                <div className="h-8 w-8 rounded-full bg-amber-600 flex items-center justify-center text-white font-medium">
+                                <div className="h-8 w-8 rounded-full bg-emerald-600 flex items-center justify-center text-white font-medium">
                                     {user?.name?.charAt(0) || "A"}
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             <div className="md:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-white border-b border-gray-200">
                 <Link href="/admin/dashboard" className="flex items-center">
                     <h1
-                        className={`text-lg font-bold text-amber-900 ${playfair.className}`}
+                        className={`text-lg font-bold text-emerald-900 ${playfair.className}`}
                     >
                         Nusa Rasa Resto
                     </h1>
@@ -136,7 +136,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                                 className="flex items-center"
                             >
                                 <h1
-                                    className={`text-xl font-bold text-amber-900 ${playfair.className}`}
+                                    className={`text-xl font-bold text-emerald-900 ${playfair.className}`}
                                 >
                                     Nusa Rasa Resto
                                 </h1>
@@ -157,15 +157,15 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                                         href={item.href}
                                         className={`flex items-center px-4 py-3 text-sm font-medium rounded-md group ${
                                             isActive(item.href)
-                                                ? "bg-amber-100 text-amber-900"
-                                                : "text-gray-700 hover:bg-amber-50"
+                                                ? "bg-emerald-100 text-emerald-900"
+                                                : "text-gray-700 hover:bg-emerald-50"
                                         }`}
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
                                         <span
                                             className={`mr-3 ${
                                                 isActive(item.href)
-                                                    ? "text-amber-700"
+                                                    ? "text-emerald-700"
                                                     : "text-gray-500"
                                             }`}
                                         >
@@ -181,7 +181,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                         <div className="flex flex-col px-4 py-4 border-t border-gray-200">
                             <div className="flex items-center">
                                 <div className="flex-shrink-0">
-                                    <div className="h-8 w-8 rounded-full bg-amber-600 flex items-center justify-center text-white font-medium">
+                                    <div className="h-8 w-8 rounded-full bg-emerald-600 flex items-center justify-center text-white font-medium">
                                         {user?.name?.charAt(0) || "A"}
                                     </div>
                                 </div>

@@ -19,7 +19,7 @@ const CancelBookingModal = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 bg-opacity-50 p-4">
             <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
                 <div className="flex justify-between items-center mb-4">
-                    <h3 className={`text-xl font-extrabold text-amber-900`}>
+                    <h3 className={`text-xl font-extrabold text-emerald-900`}>
                         Konfirmasi Pembatalan
                     </h3>
                     <button

@@ -73,13 +73,13 @@ const ProfileForm = ({
     return (
         <div className="mt-2">
             <div className="flex justify-between items-center mb-6">
-                <h3 className="text-lg font-semibold text-amber-900">
+                <h3 className="text-lg font-semibold text-emerald-900">
                     Informasi Profil
                 </h3>
                 {!isEdit ? (
                     <button
                         type="button"
-                        className="text-amber-600 hover:text-amber-800 font-medium flex items-center text-sm"
+                        className="text-emerald-600 hover:text-emerald-800 font-medium flex items-center text-sm"
                         onClick={() => setIsEdit(true)}
                     >
                         <Edit className="h-4 w-4 mr-1" />
@@ -119,9 +119,9 @@ const ProfileForm = ({
                                 // ref={nameInputRef}
                                 className={`appearance-none rounded-md relative block w-full pl-10 px-3 py-3 border ${
                                     isEdit
-                                        ? "border-amber-300 bg-white"
+                                        ? "border-emerald-300 bg-white"
                                         : "border-gray-200 bg-gray-50"
-                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm`}
+                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm`}
                                 placeholder="Nama Lengkap"
                             />
                         </div>
@@ -151,9 +151,9 @@ const ProfileForm = ({
                                 {...register("email")}
                                 className={`appearance-none rounded-md relative block w-full pl-10 px-3 py-3 border ${
                                     isEdit
-                                        ? "border-amber-300 bg-white"
+                                        ? "border-emerald-300 bg-white"
                                         : "border-gray-200 bg-gray-50"
-                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm`}
+                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm`}
                                 placeholder="Email"
                             />
                         </div>
@@ -182,9 +182,9 @@ const ProfileForm = ({
                                 {...register("phone")}
                                 className={`appearance-none rounded-md relative block w-full pl-10 px-3 py-3 border ${
                                     isEdit
-                                        ? "border-amber-300 bg-white"
+                                        ? "border-emerald-300 bg-white"
                                         : "border-gray-200 bg-gray-50"
-                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm`}
+                                } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm`}
                                 placeholder="Nomor Telepon"
                             />
                         </div>
@@ -200,7 +200,7 @@ const ProfileForm = ({
                     <div className="flex justify-end">
                         <button
                             type="submit"
-                            className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors"
+                            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors"
                             disabled={isPending}
                         >
                             {isPending ? (

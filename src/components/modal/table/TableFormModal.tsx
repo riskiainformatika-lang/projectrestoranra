@@ -120,7 +120,7 @@ const TableFormModal = ({
             <div className="bg-white rounded-lg w-full max-w-md">
                 <div className="p-6">
                     <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-xl font-bold text-amber-900">
+                        <h2 className="text-xl font-bold text-emerald-900">
                             {isEditing ? "Edit Meja" : "Tambah Meja Baru"}
                         </h2>
                         <button
@@ -139,7 +139,7 @@ const TableFormModal = ({
                             <input
                                 type="number"
                                 {...register("tableNumber")}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                                 placeholder="Masukkan nomor meja"
                             />
                             {errors.tableNumber && (
@@ -156,7 +156,7 @@ const TableFormModal = ({
                             <input
                                 type="number"
                                 {...register("capacity")}
-                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                                 placeholder="Masukkan kapasitas meja"
                             />
                             {errors.capacity && (
@@ -171,7 +171,7 @@ const TableFormModal = ({
                                 type="checkbox"
                                 id="isAvailable"
                                 {...register("isAvailable")}
-                                className="h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded"
+                                className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded"
                             />
                             <label
                                 htmlFor="isAvailable"
@@ -192,7 +192,7 @@ const TableFormModal = ({
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-700 flex items-center"
+                                className="px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 flex items-center"
                             >
                                 {createTableMutation.isPending ||
                                 updateTableMutation.isPending ? (

@@ -34,7 +34,7 @@ const BookingSuccessPage: NextPage = () => {
             </Head>
 
             {/* Success Content */}
-            <section className="py-20 px-4 bg-amber-50 min-h-screen flex items-center">
+            <section className="py-20 px-4 bg-emerald-50 min-h-screen flex items-center">
                 <div className="container mx-auto max-w-3xl">
                     <div className="bg-white rounded-lg shadow-lg p-8 md:p-12 text-center">
                         <div className="flex justify-center mb-6">
@@ -42,7 +42,7 @@ const BookingSuccessPage: NextPage = () => {
                         </div>
 
                         <h1
-                            className={`text-3xl md:text-4xl font-extrabold text-amber-900 mb-4`}
+                            className={`text-3xl md:text-4xl font-extrabold text-emerald-900 mb-4`}
                         >
                             Reservasi Berhasil!
                         </h1>
@@ -63,13 +63,13 @@ const BookingSuccessPage: NextPage = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/profile/bookings"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium"
                             >
                                 Lihat Reservasi Saya
                             </Link>
                             <Link
                                 href="/menu"
-                                className="bg-white hover:bg-gray-100 text-amber-900 border border-amber-300 px-6 py-3 rounded-md font-medium"
+                                className="bg-white hover:bg-gray-100 text-emerald-900 border border-emerald-300 px-6 py-3 rounded-md font-medium"
                             >
                                 Lihat Menu Kami
                             </Link>

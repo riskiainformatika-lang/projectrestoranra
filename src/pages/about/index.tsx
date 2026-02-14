@@ -186,7 +186,7 @@ const AboutPage: NextPage = () => {
                         </motion.div>
                         <motion.div className="lg:w-1/2" variants={fadeInUp}>
                             <motion.h2
-                                className={`text-3xl font-bold text-amber-900 mb-6 ${playfair.className}`}
+                                className={`text-3xl font-bold text-emerald-900 mb-6 ${playfair.className}`}
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={
                                     storyInView
@@ -268,7 +268,7 @@ const AboutPage: NextPage = () => {
 
             {/* Values Section */}
             <motion.section
-                className="py-16 px-4 bg-amber-50"
+                className="py-16 px-4 bg-emerald-50"
                 ref={valuesRef}
                 initial="hidden"
                 animate={valuesInView ? "visible" : "hidden"}
@@ -280,7 +280,7 @@ const AboutPage: NextPage = () => {
                         variants={fadeInUp}
                     >
                         <motion.h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={
                                 valuesInView ? { opacity: 1 } : { opacity: 0 }
@@ -315,13 +315,13 @@ const AboutPage: NextPage = () => {
                             }}
                         >
                             <motion.div
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                                 whileHover={{ rotate: 5, scale: 1.1 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <Award className="h-8 w-8 text-amber-700" />
+                                <Award className="h-8 w-8 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2 text-center">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2 text-center">
                                 Keaslian
                             </h3>
                             <p className="text-gray-600 text-center">
@@ -340,13 +340,13 @@ const AboutPage: NextPage = () => {
                             }}
                         >
                             <motion.div
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                                 whileHover={{ rotate: 5, scale: 1.1 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <Utensils className="h-8 w-8 text-amber-700" />
+                                <Utensils className="h-8 w-8 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2 text-center">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2 text-center">
                                 Kualitas
                             </h3>
                             <p className="text-gray-600 text-center">
@@ -365,13 +365,13 @@ const AboutPage: NextPage = () => {
                             }}
                         >
                             <motion.div
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                                 whileHover={{ rotate: 5, scale: 1.1 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <Users className="h-8 w-8 text-amber-700" />
+                                <Users className="h-8 w-8 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2 text-center">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2 text-center">
                                 Keramahan
                             </h3>
                             <p className="text-gray-600 text-center">
@@ -390,13 +390,13 @@ const AboutPage: NextPage = () => {
                             }}
                         >
                             <motion.div
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                                 whileHover={{ rotate: 5, scale: 1.1 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <Calendar className="h-8 w-8 text-amber-700" />
+                                <Calendar className="h-8 w-8 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2 text-center">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2 text-center">
                                 Inovasi
                             </h3>
                             <p className="text-gray-600 text-center">
@@ -423,7 +423,7 @@ const AboutPage: NextPage = () => {
                         variants={fadeInUp}
                     >
                         <motion.h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={
                                 milestonesInView
@@ -480,13 +480,13 @@ const AboutPage: NextPage = () => {
                                 }}
                             >
                                 <motion.div
-                                    className="bg-amber-100 text-amber-900 px-4 py-2 rounded-lg font-bold text-xl min-w-[100px] text-center"
+                                    className="bg-emerald-100 text-emerald-900 px-4 py-2 rounded-lg font-bold text-xl min-w-[100px] text-center"
                                     whileHover={{ scale: 1.05 }}
                                 >
                                     {milestone.year}
                                 </motion.div>
-                                <div className="bg-amber-50 rounded-lg p-6 shadow-sm flex-1">
-                                    <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                                <div className="bg-emerald-50 rounded-lg p-6 shadow-sm flex-1">
+                                    <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                         {milestone.title}
                                     </h3>
                                     <p className="text-gray-700">
@@ -501,7 +501,7 @@ const AboutPage: NextPage = () => {
 
             {/* Our Team Section */}
             <motion.section
-                className="py-16 px-4 bg-amber-50"
+                className="py-16 px-4 bg-emerald-50"
                 ref={teamRef}
                 initial="hidden"
                 animate={teamInView ? "visible" : "hidden"}
@@ -513,7 +513,7 @@ const AboutPage: NextPage = () => {
                         variants={fadeInUp}
                     >
                         <motion.h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                             initial={{ opacity: 0 }}
                             animate={
                                 teamInView ? { opacity: 1 } : { opacity: 0 }
@@ -555,7 +555,7 @@ const AboutPage: NextPage = () => {
 
             {/* Reservation CTA */}
             <motion.section
-                className="py-12 bg-amber-900 text-white"
+                className="py-12 bg-emerald-900 text-white"
                 ref={ctaRef}
                 initial={{ opacity: 0, y: 50 }}
                 animate={
@@ -576,7 +576,7 @@ const AboutPage: NextPage = () => {
                             Rasakan Pengalaman Bersantap Bersama Kami
                         </motion.h2>
                         <motion.p
-                            className="text-amber-100 mb-8 text-lg"
+                            className="text-emerald-100 mb-8 text-lg"
                             initial={{ opacity: 0 }}
                             animate={
                                 ctaInView ? { opacity: 1 } : { opacity: 0 }
@@ -602,7 +602,7 @@ const AboutPage: NextPage = () => {
                             >
                                 <Link
                                     href="/booking/new"
-                                    className="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
+                                    className="bg-white hover:bg-gray-100 text-emerald-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
                                 >
                                     <motion.span
                                         className="flex items-center"
@@ -626,7 +626,7 @@ const AboutPage: NextPage = () => {
                             >
                                 <Link
                                     href="/menu"
-                                    className="bg-transparent hover:bg-amber-800 text-white border border-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
+                                    className="bg-transparent hover:bg-emerald-800 text-white border border-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
                                 >
                                     <motion.span
                                         className="flex items-center"

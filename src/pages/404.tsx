@@ -20,7 +20,7 @@ const Custom404: NextPage = () => {
 
             {/* Error Section */}
             <section className="relative h-[70vh] md:h-[80vh] flex items-center">
-                <div className="absolute inset-0 bg-amber-900/90 z-10" />
+                <div className="absolute inset-0 bg-emerald-900/90 z-10" />
                 <div className="relative h-full w-full">
                     <Image
                         src="/images/hero-bg.jpg"
@@ -43,7 +43,7 @@ const Custom404: NextPage = () => {
                         >
                             Halaman Tidak Ditemukan
                         </h2>
-                        <p className="text-lg text-amber-100 mb-10">
+                        <p className="text-lg text-emerald-100 mb-10">
                             Maaf, halaman yang Anda cari tidak dapat ditemukan.
                             Mungkin halaman tersebut telah dipindahkan atau
                             dihapus.
@@ -52,7 +52,7 @@ const Custom404: NextPage = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/"
-                                className="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+                                className="bg-white hover:bg-gray-100 text-emerald-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                             >
                                 <span className="flex items-center justify-center gap-2">
                                     <Home className="h-5 w-5" />
@@ -61,7 +61,7 @@ const Custom404: NextPage = () => {
                             </Link>
                             <Link
                                 href="/menu"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                             >
                                 <span className="flex items-center justify-center gap-2">
                                     <Utensils className="h-5 w-5" />
@@ -74,11 +74,11 @@ const Custom404: NextPage = () => {
             </section>
 
             {/* Suggestions Section */}
-            <section className="py-16 bg-amber-50">
+            <section className="py-16 bg-emerald-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Mungkin Anda mencari
                         </h2>
@@ -89,10 +89,10 @@ const Custom404: NextPage = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <div className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                <Utensils className="h-7 w-7 text-amber-700" />
+                            <div className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                                <Utensils className="h-7 w-7 text-emerald-700" />
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Menu Kami
                             </h3>
                             <p className="text-gray-600 mb-4">
@@ -101,17 +101,17 @@ const Custom404: NextPage = () => {
                             </p>
                             <Link
                                 href="/menu"
-                                className="text-amber-600 hover:text-amber-800 font-medium"
+                                className="text-emerald-600 hover:text-emerald-800 font-medium"
                             >
                                 Lihat Menu
                             </Link>
                         </div>
 
                         <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <div className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                <Book className="h-7 w-7 text-amber-700" />
+                            <div className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                                <Book className="h-7 w-7 text-emerald-700" />
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Reservasi
                             </h3>
                             <p className="text-gray-600 mb-4">
@@ -120,16 +120,16 @@ const Custom404: NextPage = () => {
                             </p>
                             <Link
                                 href="/booking/new"
-                                className="text-amber-600 hover:text-amber-800 font-medium"
+                                className="text-emerald-600 hover:text-emerald-800 font-medium"
                             >
                                 Reservasi Sekarang
                             </Link>
                         </div>
 
                         <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <div className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                            <div className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4">
                                 <svg
-                                    className="h-7 w-7 text-amber-700"
+                                    className="h-7 w-7 text-emerald-700"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -143,7 +143,7 @@ const Custom404: NextPage = () => {
                                     />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Tentang Kami
                             </h3>
                             <p className="text-gray-600 mb-4">
@@ -152,16 +152,16 @@ const Custom404: NextPage = () => {
                             </p>
                             <Link
                                 href="/about"
-                                className="text-amber-600 hover:text-amber-800 font-medium"
+                                className="text-emerald-600 hover:text-emerald-800 font-medium"
                             >
                                 Tentang Kami
                             </Link>
                         </div>
 
                         <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <div className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                            <div className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4">
                                 <svg
-                                    className="h-7 w-7 text-amber-700"
+                                    className="h-7 w-7 text-emerald-700"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ const Custom404: NextPage = () => {
                                     />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Kontak
                             </h3>
                             <p className="text-gray-600 mb-4">
@@ -184,7 +184,7 @@ const Custom404: NextPage = () => {
                             </p>
                             <Link
                                 href="/contact"
-                                className="text-amber-600 hover:text-amber-800 font-medium"
+                                className="text-emerald-600 hover:text-emerald-800 font-medium"
                             >
                                 Hubungi Kami
                             </Link>

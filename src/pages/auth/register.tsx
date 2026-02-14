@@ -89,7 +89,7 @@ const Register: NextPage = () => {
                                 type="text"
                                 autoComplete="name"
                                 {...register("name")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                                 placeholder="Nama Lengkap"
                             />
                             {formState.errors.name && (
@@ -111,7 +111,7 @@ const Register: NextPage = () => {
                                 type="email"
                                 autoComplete="email"
                                 {...register("email")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                                 placeholder="Email"
                             />
                             {formState.errors.email && (
@@ -133,7 +133,7 @@ const Register: NextPage = () => {
                                 type="text"
                                 autoComplete="tel"
                                 {...register("phone")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                                 placeholder="Nomor Telepon"
                             />
                             {formState.errors.phone && (
@@ -156,7 +156,7 @@ const Register: NextPage = () => {
                                     type={showPassword ? "text" : "password"}
                                     autoComplete="new-password"
                                     {...register("password")}
-                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                                     placeholder="Password"
                                 />
                                 {formState.errors.password && (
@@ -188,7 +188,7 @@ const Register: NextPage = () => {
                                 type={showConfirmPassword ? "text" : "password"}
                                 autoComplete="new-password"
                                 {...register("confirmPassword")}
-                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-amber-500 focus:border-amber-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm"
                                 placeholder="Konfirmasi Password"
                             />
                             {formState.errors.confirmPassword && (
@@ -212,7 +212,7 @@ const Register: NextPage = () => {
                         <button
                             type="submit"
                             disabled={isPending}
-                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                         >
                             {isPending ? "Loading..." : "Daftar"}
                         </button>
@@ -223,7 +223,7 @@ const Register: NextPage = () => {
                             Sudah punya akun?{" "}
                             <Link
                                 href="/auth/login"
-                                className="font-medium text-amber-600 hover:text-amber-500"
+                                className="font-medium text-emerald-600 hover:text-emerald-500"
                             >
                                 Login di sini
                             </Link>

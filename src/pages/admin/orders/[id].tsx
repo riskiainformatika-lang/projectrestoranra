@@ -91,8 +91,8 @@ const AdminOrderDetailPage: NextPage = () => {
             <AdminLayout>
                 <div className="flex justify-center items-center min-h-screen bg-gray-50">
                     <div className="text-center">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data pesanan...
                         </p>
                     </div>
@@ -113,12 +113,12 @@ const AdminOrderDetailPage: NextPage = () => {
 
             <div className="p-6 bg-white rounded-lg">
                 <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
-                    <h1 className="text-2xl font-extrabold text-amber-900 mb-4 md:mb-0">
+                    <h1 className="text-2xl font-extrabold text-emerald-900 mb-4 md:mb-0">
                         Detail Pesanan
                     </h1>
                     <Link
                         href="/admin/orders"
-                        className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                        className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                     >
                         <ArrowLeft className="h-4 w-4 mr-2" />
                         Kembali ke Daftar Pesanan
@@ -143,13 +143,13 @@ const AdminOrderDetailPage: NextPage = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left Column: Order Information */}
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <h2 className="text-xl font-bold text-amber-900 mb-4 pb-2 border-b border-gray-200">
+                        <h2 className="text-xl font-bold text-emerald-900 mb-4 pb-2 border-b border-gray-200">
                             Informasi Pesanan
                         </h2>
 
                         <div className="space-y-4 mt-4">
                             <div className="flex items-start">
-                                <Calendar className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Calendar className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Tanggal & Waktu
@@ -170,13 +170,13 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Table2 className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Table2 className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Meja
                                     </p>
                                     <p className="text-gray-900 font-medium">
-                                        <span className="px-2 py-1 bg-amber-50 text-amber-800 rounded-md text-sm">
+                                        <span className="px-2 py-1 bg-emerald-50 text-emerald-800 rounded-md text-sm">
                                             Meja #
                                             {order?.booking.table.tableNumber}
                                         </span>
@@ -190,7 +190,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Users className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Users className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Jumlah Tamu
@@ -202,7 +202,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Receipt className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Receipt className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Total Harga
@@ -217,7 +217,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Clock className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Clock className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Waktu Pemesanan
@@ -236,7 +236,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             {order?.updatedAt &&
                                 order.updatedAt !== order.createdAt && (
                                     <div className="flex items-start">
-                                        <Clock className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                        <Clock className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                         <div>
                                             <p className="text-gray-600 text-sm">
                                                 Terakhir Diubah
@@ -256,13 +256,13 @@ const AdminOrderDetailPage: NextPage = () => {
 
                     {/* Right Column: Customer Details */}
                     <div className="bg-gray-50 p-6 rounded-lg">
-                        <h2 className="text-xl font-bold text-amber-900 mb-4 pb-2 border-b border-gray-200">
+                        <h2 className="text-xl font-bold text-emerald-900 mb-4 pb-2 border-b border-gray-200">
                             Informasi Pelanggan
                         </h2>
 
                         <div className="space-y-4 mt-4">
                             <div className="flex items-start">
-                                <User className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <User className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Nama
@@ -274,7 +274,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <MapPin className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <MapPin className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         Email
@@ -286,7 +286,7 @@ const AdminOrderDetailPage: NextPage = () => {
                             </div>
 
                             <div className="flex items-start">
-                                <Calendar className="w-5 h-5 text-amber-600 mr-3 mt-0.5" />
+                                <Calendar className="w-5 h-5 text-emerald-600 mr-3 mt-0.5" />
                                 <div>
                                     <p className="text-gray-600 text-sm">
                                         No. Telepon
@@ -302,24 +302,24 @@ const AdminOrderDetailPage: NextPage = () => {
 
                 {/* Order Items */}
                 <div className="mt-8">
-                    <h2 className="text-xl font-bold text-amber-900 mb-4">
+                    <h2 className="text-xl font-bold text-emerald-900 mb-4">
                         Daftar Menu Pesanan
                     </h2>
 
                     <div className="overflow-x-auto bg-gray-50 rounded-lg">
                         <table className="min-w-full bg-white">
                             <thead>
-                                <tr className="bg-amber-50">
-                                    <th className="py-3 px-4 text-left text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                <tr className="bg-emerald-50">
+                                    <th className="py-3 px-4 text-left text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Menu
                                     </th>
-                                    <th className="py-3 px-4 text-center text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-center text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Harga
                                     </th>
-                                    <th className="py-3 px-4 text-center text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-center text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Jumlah
                                     </th>
-                                    <th className="py-3 px-4 text-right text-xs font-medium text-amber-800 uppercase tracking-wider border-b">
+                                    <th className="py-3 px-4 text-right text-xs font-medium text-emerald-800 uppercase tracking-wider border-b">
                                         Subtotal
                                     </th>
                                 </tr>
@@ -332,7 +332,7 @@ const AdminOrderDetailPage: NextPage = () => {
                                     >
                                         <td className="py-4 px-4">
                                             <div className="flex items-center">
-                                                <div className="flex-shrink-0 h-12 w-12 bg-amber-100 rounded-md overflow-hidden">
+                                                <div className="flex-shrink-0 h-12 w-12 bg-emerald-100 rounded-md overflow-hidden">
                                                     {item.menu.image ? (
                                                         <Image
                                                             src={`/images/menu/${item.menu.image}`}
@@ -342,7 +342,7 @@ const AdminOrderDetailPage: NextPage = () => {
                                                             height={96}
                                                         />
                                                     ) : (
-                                                        <div className="flex items-center justify-center h-full w-full text-amber-600">
+                                                        <div className="flex items-center justify-center h-full w-full text-emerald-600">
                                                             <ShoppingCart className="h-6 w-6" />
                                                         </div>
                                                     )}
@@ -379,7 +379,7 @@ const AdminOrderDetailPage: NextPage = () => {
                                 ))}
 
                                 {/* Total Row */}
-                                <tr className="bg-amber-50">
+                                <tr className="bg-emerald-50">
                                     <td
                                         colSpan={3}
                                         className="py-4 px-4 text-right text-sm font-bold text-gray-900"
@@ -400,7 +400,7 @@ const AdminOrderDetailPage: NextPage = () => {
 
                 {/* Action Buttons */}
                 <div className="mt-8 border-t border-gray-200 pt-6">
-                    <h3 className="text-lg font-semibold text-amber-900 mb-4">
+                    <h3 className="text-lg font-semibold text-emerald-900 mb-4">
                         Tindakan
                     </h3>
                     <div className="flex flex-wrap gap-3">
@@ -459,34 +459,34 @@ const AdminOrderDetailPage: NextPage = () => {
                 </div>
 
                 {/* Staff Guidelines */}
-                <div className="mt-8 bg-amber-50 p-6 rounded-lg">
-                    <h3 className="text-lg font-semibold text-amber-900 mb-4">
+                <div className="mt-8 bg-emerald-50 p-6 rounded-lg">
+                    <h3 className="text-lg font-semibold text-emerald-900 mb-4">
                         Panduan untuk Staff
                     </h3>
                     <ul className="space-y-2 text-gray-700">
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Pastikan menu disiapkan sesuai dengan catatan
                                 khusus dari pelanggan.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Jika ada menu yang tidak tersedia, segera
                                 hubungi pelanggan untuk penggantian.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Perhatikan waktu penyajian agar sesuai dengan
                                 reservasi pelanggan.
                             </span>
                         </li>
                         <li className="flex items-start">
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-emerald-600 mr-2">•</span>
                             <span>
                                 Ubah status pesanan menjadi {`'Selesai'`}{" "}
                                 setelah semua menu telah disajikan dan dinikmati

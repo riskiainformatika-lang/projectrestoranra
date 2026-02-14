@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                             >
                                 <Link
                                     href="/menu"
-                                    className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl block"
+                                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl block"
                                 >
                                     <span className="flex items-center justify-center gap-2">
                                         <Utensils className="h-5 w-5" />
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
                             >
                                 <Link
                                     href="/booking/new"
-                                    className="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl block"
+                                    className="bg-white hover:bg-gray-100 text-emerald-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl block"
                                 >
                                     <span className="flex items-center justify-center gap-2">
                                         <Calendar className="h-5 w-5" />
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
                         className="text-center mb-12"
                     >
                         <h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Pengalaman Bersantap yang Istimewa
                         </h2>
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                                 y: -10,
                                 transition: { duration: 0.3 },
                             }}
-                            className="bg-amber-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                            className="bg-emerald-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
                         >
                             <motion.div
                                 initial={{ scale: 0 }}
@@ -179,11 +179,11 @@ const Home: NextPage = () => {
                                     type: "spring",
                                     stiffness: 200,
                                 }}
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                             >
-                                <Utensils className="h-7 w-7 text-amber-700" />
+                                <Utensils className="h-7 w-7 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Masakan Autentik
                             </h3>
                             <p className="text-gray-600">
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                                 y: -10,
                                 transition: { duration: 0.3 },
                             }}
-                            className="bg-amber-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                            className="bg-emerald-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
                         >
                             <motion.div
                                 initial={{ scale: 0 }}
@@ -209,11 +209,11 @@ const Home: NextPage = () => {
                                     type: "spring",
                                     stiffness: 200,
                                 }}
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                             >
-                                <Award className="h-7 w-7 text-amber-700" />
+                                <Award className="h-7 w-7 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Kualitas Terbaik
                             </h3>
                             <p className="text-gray-600">
@@ -229,7 +229,7 @@ const Home: NextPage = () => {
                                 y: -10,
                                 transition: { duration: 0.3 },
                             }}
-                            className="bg-amber-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                            className="bg-emerald-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
                         >
                             <motion.div
                                 initial={{ scale: 0 }}
@@ -239,11 +239,11 @@ const Home: NextPage = () => {
                                     type: "spring",
                                     stiffness: 200,
                                 }}
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                             >
-                                <MapPin className="h-7 w-7 text-amber-700" />
+                                <MapPin className="h-7 w-7 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Lokasi Strategis
                             </h3>
                             <p className="text-gray-600">
@@ -259,7 +259,7 @@ const Home: NextPage = () => {
                                 y: -10,
                                 transition: { duration: 0.3 },
                             }}
-                            className="bg-amber-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                            className="bg-emerald-50 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
                         >
                             <motion.div
                                 initial={{ scale: 0 }}
@@ -269,11 +269,11 @@ const Home: NextPage = () => {
                                     type: "spring",
                                     stiffness: 200,
                                 }}
-                                className="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-4"
+                                className="w-16 h-16 mx-auto bg-emerald-100 rounded-full flex items-center justify-center mb-4"
                             >
-                                <Clock className="h-7 w-7 text-amber-700" />
+                                <Clock className="h-7 w-7 text-emerald-700" />
                             </motion.div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Reservasi Mudah
                             </h3>
                             <p className="text-gray-600">
@@ -291,7 +291,7 @@ const Home: NextPage = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={fadeIn}
-                className="py-16 bg-amber-50"
+                className="py-16 bg-emerald-50"
             >
                 <div className="container mx-auto px-4">
                     <motion.div
@@ -299,7 +299,7 @@ const Home: NextPage = () => {
                         className="text-center mb-12"
                     >
                         <h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Menu Unggulan Kami
                         </h2>
@@ -342,17 +342,17 @@ const Home: NextPage = () => {
                                         }}
                                         className="absolute bottom-0 left-0 p-4 z-20"
                                     >
-                                        <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                        <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                                             Best Seller
                                         </span>
                                     </motion.div>
                                 </div>
                                 <div className="p-4">
                                     <div className="flex justify-between items-center mb-2">
-                                        <h3 className="text-xl font-semibold text-amber-900">
+                                        <h3 className="text-xl font-semibold text-emerald-900">
                                             {menu.name}
                                         </h3>
-                                        <span className="text-amber-600 font-bold">
+                                        <span className="text-emerald-600 font-bold">
                                             {`Rp. ${menu.price.toLocaleString(
                                                 "id-ID"
                                             )}`}
@@ -367,7 +367,7 @@ const Home: NextPage = () => {
                                     >
                                         <Link
                                             href="/menu"
-                                            className="text-amber-600 hover:text-amber-800 font-medium text-sm flex items-center"
+                                            className="text-emerald-600 hover:text-emerald-800 font-medium text-sm flex items-center"
                                         >
                                             Lihat Menu Lengkap
                                             <svg
@@ -404,7 +404,7 @@ const Home: NextPage = () => {
                         >
                             <Link
                                 href="/menu"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center"
                             >
                                 <Utensils className="mr-2 h-5 w-5" />
                                 Jelajahi Menu Lengkap
@@ -420,7 +420,7 @@ const Home: NextPage = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={scaleIn}
-                className="py-16 bg-amber-900 text-white"
+                className="py-16 bg-emerald-900 text-white"
             >
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
@@ -432,7 +432,7 @@ const Home: NextPage = () => {
                         </motion.h2>
                         <motion.p
                             variants={slideUp}
-                            className="text-amber-100 mb-8 text-lg"
+                            className="text-emerald-100 mb-8 text-lg"
                         >
                             Jangan lewatkan pengalaman bersantap yang istimewa.
                             Reservasi meja Anda untuk memastikan tempat di Nusa Rasa Resto
@@ -448,7 +448,7 @@ const Home: NextPage = () => {
                             >
                                 <Link
                                     href="/booking/new"
-                                    className="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
+                                    className="bg-white hover:bg-gray-100 text-emerald-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
                                 >
                                     <Calendar className="mr-2 h-5 w-5" />
                                     Reservasi Sekarang
@@ -461,7 +461,7 @@ const Home: NextPage = () => {
                             >
                                 <Link
                                     href="/contact"
-                                    className="bg-transparent hover:bg-amber-800 text-white border border-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
+                                    className="bg-transparent hover:bg-emerald-800 text-white border border-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
                                 >
                                     Hubungi Kami
                                 </Link>
@@ -482,10 +482,10 @@ const Home: NextPage = () => {
                 <div className="container mx-auto px-4">
                     <motion.div
                         variants={slideUp}
-                        className="bg-amber-50 p-8 rounded-lg shadow-md"
+                        className="bg-emerald-50 p-8 rounded-lg shadow-md"
                     >
                         <h3
-                            className={`text-2xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-2xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Lokasi Kami
                         </h3>
@@ -523,7 +523,7 @@ const Home: NextPage = () => {
                             <Link
                                 href="https://www.google.com/maps?q=Jl.+Raya+Cita+Nusa+No.+123,+Denpasar,+Bali"
                                 target="_blank"
-                                className="text-amber-600 hover:text-amber-800 font-medium inline-flex items-center"
+                                className="text-emerald-600 hover:text-emerald-800 font-medium inline-flex items-center"
                             >
                                 Lihat di Google Maps
                                 <svg

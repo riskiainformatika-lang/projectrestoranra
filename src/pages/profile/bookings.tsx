@@ -142,10 +142,10 @@ const ProfileBookingsPage: NextPage = () => {
     if (isLoading) {
         return (
             <Layout>
-                <div className="flex justify-center items-center min-h-screen bg-amber-50">
+                <div className="flex justify-center items-center min-h-screen bg-emerald-50">
                     <div className="text-center">
-                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-amber-600" />
-                        <p className="mt-2 text-amber-800">
+                        <Loader2 className="h-8 w-8 animate-spin mx-auto text-emerald-600" />
+                        <p className="mt-2 text-emerald-800">
                             Memuat data reservasi...
                         </p>
                     </div>
@@ -164,12 +164,12 @@ const ProfileBookingsPage: NextPage = () => {
                 />
             </Head>
 
-            <section className="py-12 px-4 bg-amber-50 min-h-screen">
+            <section className="py-12 px-4 bg-emerald-50 min-h-screen">
                 <div className="container mx-auto max-w-4xl space-y-8">
                     {/* Header */}
                     <div className="text-center mb-8">
                         <h1
-                            className={`text-3xl font-extrabold text-amber-900 mb-4`}
+                            className={`text-3xl font-extrabold text-emerald-900 mb-4`}
                         >
                             Reservasi Saya
                         </h1>
@@ -184,7 +184,7 @@ const ProfileBookingsPage: NextPage = () => {
                         <div>
                             <Link
                                 href="/booking/new"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium inline-flex items-center"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium inline-flex items-center"
                             >
                                 <Calendar className="mr-2 h-5 w-5" />
                                 Buat Reservasi Baru
@@ -205,7 +205,7 @@ const ProfileBookingsPage: NextPage = () => {
                                 onChange={(e) =>
                                     setStatusFilter(e.target.value)
                                 }
-                                className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+                                className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
                             >
                                 {statusFilters.map((filter) => (
                                     <option
@@ -232,10 +232,10 @@ const ProfileBookingsPage: NextPage = () => {
                     {/* Empty State */}
                     {bookings && bookings.length === 0 && (
                         <div className="bg-white rounded-lg shadow-md p-8 text-center">
-                            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 mx-auto mb-4">
+                            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mx-auto mb-4">
                                 <Calendar className="h-8 w-8" />
                             </div>
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Belum Ada Reservasi
                             </h3>
                             <p className="text-gray-600 mb-6">
@@ -245,7 +245,7 @@ const ProfileBookingsPage: NextPage = () => {
                             </p>
                             <Link
                                 href="/booking/new"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium"
                             >
                                 Buat Reservasi
                             </Link>
@@ -258,7 +258,7 @@ const ProfileBookingsPage: NextPage = () => {
                             {Object.entries(groupedBookings()).map(
                                 ([group, bookingsList]) => (
                                     <div key={group}>
-                                        <h2 className="text-xl font-semibold text-amber-800 mb-4">
+                                        <h2 className="text-xl font-semibold text-emerald-800 mb-4">
                                             {group}
                                         </h2>
                                         <div className="space-y-4">
@@ -269,8 +269,8 @@ const ProfileBookingsPage: NextPage = () => {
                                                 >
                                                     <div className="flex flex-col md:flex-row">
                                                         {/* Date Column */}
-                                                        <div className="bg-amber-50 p-4 md:p-6 flex flex-col items-center justify-center md:w-1/5">
-                                                            <p className="text-amber-900 font-bold text-2xl">
+                                                        <div className="bg-emerald-50 p-4 md:p-6 flex flex-col items-center justify-center md:w-1/5">
+                                                            <p className="text-emerald-900 font-bold text-2xl">
                                                                 {format(
                                                                     new Date(
                                                                         booking.dateTime
@@ -281,7 +281,7 @@ const ProfileBookingsPage: NextPage = () => {
                                                                     }
                                                                 )}
                                                             </p>
-                                                            <p className="text-amber-800">
+                                                            <p className="text-emerald-800">
                                                                 {format(
                                                                     new Date(
                                                                         booking.dateTime
@@ -292,7 +292,7 @@ const ProfileBookingsPage: NextPage = () => {
                                                                     }
                                                                 )}
                                                             </p>
-                                                            <p className="mt-2 font-medium text-amber-700">
+                                                            <p className="mt-2 font-medium text-emerald-700">
                                                                 {format(
                                                                     new Date(
                                                                         booking.dateTime
@@ -353,8 +353,8 @@ const ProfileBookingsPage: NextPage = () => {
 
                                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm mb-4">
                                                                 <div className="flex items-center">
-                                                                    <Users className="h-4 w-4 text-amber-600 mr-2" />
-                                                                    <span className="text-amber-600">
+                                                                    <Users className="h-4 w-4 text-emerald-600 mr-2" />
+                                                                    <span className="text-emerald-600">
                                                                         {
                                                                             booking.guestCount
                                                                         }{" "}
@@ -362,8 +362,8 @@ const ProfileBookingsPage: NextPage = () => {
                                                                     </span>
                                                                 </div>
                                                                 <div className="flex items-center">
-                                                                    <Clock className="h-4 w-4 text-amber-600 mr-2" />
-                                                                    <span className="text-amber-600">
+                                                                    <Clock className="h-4 w-4 text-emerald-600 mr-2" />
+                                                                    <span className="text-emerald-600">
                                                                         Durasi:{" "}
                                                                         {
                                                                             booking.duration
@@ -391,7 +391,7 @@ const ProfileBookingsPage: NextPage = () => {
                                                             <div className="mt-4 pt-4 border-t border-gray-100 flex justify-end">
                                                                 <Link
                                                                     href={`/booking/${booking.id}`}
-                                                                    className="text-amber-600 hover:text-amber-800 font-medium text-sm"
+                                                                    className="text-emerald-600 hover:text-emerald-800 font-medium text-sm"
                                                                 >
                                                                     Lihat Detail
                                                                 </Link>

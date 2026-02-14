@@ -20,7 +20,7 @@ const Custom500: NextPage = () => {
 
             {/* Error Section */}
             <section className="relative h-[70vh] md:h-[80vh] flex items-center">
-                <div className="absolute inset-0 bg-amber-900/90 z-10" />
+                <div className="absolute inset-0 bg-emerald-900/90 z-10" />
                 <div className="relative h-full w-full">
                     <Image
                         src="/images/hero-bg.jpg"
@@ -43,7 +43,7 @@ const Custom500: NextPage = () => {
                         >
                             Terjadi Kesalahan Server
                         </h2>
-                        <p className="text-lg text-amber-100 mb-10">
+                        <p className="text-lg text-emerald-100 mb-10">
                             Mohon maaf, terjadi kesalahan pada server kami. Tim
                             kami sedang bekerja untuk memperbaikinya. Silakan
                             coba lagi beberapa saat lagi.
@@ -52,7 +52,7 @@ const Custom500: NextPage = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/"
-                                className="bg-white hover:bg-gray-100 text-amber-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+                                className="bg-white hover:bg-gray-100 text-emerald-900 px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                             >
                                 <span className="flex items-center justify-center gap-2">
                                     <Home className="h-5 w-5" />
@@ -61,7 +61,7 @@ const Custom500: NextPage = () => {
                             </Link>
                             <button
                                 onClick={() => window.location.reload()}
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
                             >
                                 <span className="flex items-center justify-center gap-2">
                                     <RefreshCw className="h-5 w-5" />
@@ -78,7 +78,7 @@ const Custom500: NextPage = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
                         <h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Butuh Bantuan?
                         </h2>
@@ -91,7 +91,7 @@ const Custom500: NextPage = () => {
                         <div className="flex justify-center">
                             <Link
                                 href="/contact"
-                                className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center"
+                                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors duration-200 inline-flex items-center"
                             >
                                 <Mail className="mr-2 h-5 w-5" />
                                 Hubungi Dukungan
@@ -102,11 +102,11 @@ const Custom500: NextPage = () => {
             </section>
 
             {/* Alternative Links */}
-            <section className="py-16 bg-amber-50">
+            <section className="py-16 bg-emerald-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2
-                            className={`text-3xl font-bold text-amber-900 mb-4 ${playfair.className}`}
+                            className={`text-3xl font-bold text-emerald-900 mb-4 ${playfair.className}`}
                         >
                             Halaman Lainnya
                         </h2>
@@ -119,9 +119,9 @@ const Custom500: NextPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
                         <Link
                             href="/"
-                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-amber-100"
+                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-emerald-100"
                         >
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Beranda
                             </h3>
                             <p className="text-gray-600">
@@ -131,9 +131,9 @@ const Custom500: NextPage = () => {
 
                         <Link
                             href="/menu"
-                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-amber-100"
+                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-emerald-100"
                         >
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Menu
                             </h3>
                             <p className="text-gray-600">Jelajahi menu kami</p>
@@ -141,9 +141,9 @@ const Custom500: NextPage = () => {
 
                         <Link
                             href="/booking/new"
-                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-amber-100"
+                            className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-emerald-100"
                         >
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                            <h3 className="text-xl font-semibold text-emerald-900 mb-2">
                                 Reservasi
                             </h3>
                             <p className="text-gray-600">Pesan meja Anda</p>

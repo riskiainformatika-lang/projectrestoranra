@@ -110,7 +110,7 @@ const ContactPage: NextPage = () => {
                     transition={{ duration: 1 }}
                 />
                 <div className="relative h-full">
-                    <div className="bg-amber-900 h-full" />
+                    <div className="bg-emerald-900 h-full" />
                 </div>
                 <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
                     <motion.div 
@@ -138,7 +138,7 @@ const ContactPage: NextPage = () => {
 
             {/* Contact Content with Animation */}
             <motion.section 
-                className="py-16 px-4 bg-amber-50"
+                className="py-16 px-4 bg-emerald-50"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
@@ -154,7 +154,7 @@ const ContactPage: NextPage = () => {
                         >
                             <div className="bg-white p-8 rounded-lg shadow-md">
                                 <motion.h2
-                                    className={`text-2xl font-bold text-amber-900 mb-6 ${playfair.className}`}
+                                    className={`text-2xl font-bold text-emerald-900 mb-6 ${playfair.className}`}
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
@@ -175,14 +175,14 @@ const ContactPage: NextPage = () => {
                                         variants={fadeInUp}
                                     >
                                         <motion.div 
-                                            className="bg-amber-100 p-3 rounded-full mr-4"
+                                            className="bg-emerald-100 p-3 rounded-full mr-4"
                                             whileHover={{ scale: 1.1, backgroundColor: "#fef3c7" }}
                                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                         >
-                                            <MapPin className="h-6 w-6 text-amber-700" />
+                                            <MapPin className="h-6 w-6 text-emerald-700" />
                                         </motion.div>
                                         <div>
-                                            <h3 className="font-semibold text-amber-900 mb-1">
+                                            <h3 className="font-semibold text-emerald-900 mb-1">
                                                 Alamat
                                             </h3>
                                             <p className="text-gray-600">
@@ -198,14 +198,14 @@ const ContactPage: NextPage = () => {
                                         variants={fadeInUp}
                                     >
                                         <motion.div 
-                                            className="bg-amber-100 p-3 rounded-full mr-4"
+                                            className="bg-emerald-100 p-3 rounded-full mr-4"
                                             whileHover={{ scale: 1.1, backgroundColor: "#fef3c7" }}
                                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                         >
-                                            <Phone className="h-6 w-6 text-amber-700" />
+                                            <Phone className="h-6 w-6 text-emerald-700" />
                                         </motion.div>
                                         <div>
-                                            <h3 className="font-semibold text-amber-900 mb-1">
+                                            <h3 className="font-semibold text-emerald-900 mb-1">
                                                 Telepon
                                             </h3>
                                             <p className="text-gray-600">
@@ -219,14 +219,14 @@ const ContactPage: NextPage = () => {
                                         variants={fadeInUp}
                                     >
                                         <motion.div 
-                                            className="bg-amber-100 p-3 rounded-full mr-4"
+                                            className="bg-emerald-100 p-3 rounded-full mr-4"
                                             whileHover={{ scale: 1.1, backgroundColor: "#fef3c7" }}
                                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                         >
-                                            <Mail className="h-6 w-6 text-amber-700" />
+                                            <Mail className="h-6 w-6 text-emerald-700" />
                                         </motion.div>
                                         <div>
-                                            <h3 className="font-semibold text-amber-900 mb-1">
+                                            <h3 className="font-semibold text-emerald-900 mb-1">
                                                 Email
                                             </h3>
                                             <p className="text-gray-600">
@@ -243,7 +243,7 @@ const ContactPage: NextPage = () => {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.6, duration: 0.5 }}
                                 >
-                                    <h3 className="font-semibold text-amber-900 mb-3">
+                                    <h3 className="font-semibold text-emerald-900 mb-3">
                                         Jam Operasional
                                     </h3>
                                     <ul className="text-gray-600 space-y-1">
@@ -276,7 +276,7 @@ const ContactPage: NextPage = () => {
                         >
                             <div className="bg-white p-8 rounded-lg shadow-md">
                                 <motion.h2
-                                    className={`text-2xl font-bold text-amber-900 mb-6 ${playfair.className}`}
+                                    className={`text-2xl font-bold text-emerald-900 mb-6 ${playfair.className}`}
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
@@ -303,7 +303,7 @@ const ContactPage: NextPage = () => {
                                         <motion.input
                                             id="name"
                                             type="text"
-                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 ${
+                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
                                                 errors.name
                                                     ? "border-red-500"
                                                     : "border-gray-300"
@@ -339,7 +339,7 @@ const ContactPage: NextPage = () => {
                                         <motion.input
                                             id="email"
                                             type="email"
-                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 ${
+                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
                                                 errors.email
                                                     ? "border-red-500"
                                                     : "border-gray-300"
@@ -375,7 +375,7 @@ const ContactPage: NextPage = () => {
                                         <motion.input
                                             id="subject"
                                             type="text"
-                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 ${
+                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
                                                 errors.subject
                                                     ? "border-red-500"
                                                     : "border-gray-300"
@@ -411,7 +411,7 @@ const ContactPage: NextPage = () => {
                                         <motion.textarea
                                             id="message"
                                             rows={5}
-                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 ${
+                                            className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 ${
                                                 errors.message
                                                     ? "border-red-500"
                                                     : "border-gray-300"
@@ -435,7 +435,7 @@ const ContactPage: NextPage = () => {
                                     <motion.button
                                         type="submit"
                                         disabled={isPending}
-                                        className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
+                                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
                                         whileHover={{ scale: 1.02, backgroundColor: "#B45309" }}
                                         whileTap={{ scale: 0.98 }}
                                         initial="idle"

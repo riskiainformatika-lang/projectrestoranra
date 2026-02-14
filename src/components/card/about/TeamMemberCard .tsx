@@ -83,7 +83,7 @@ const TeamMemberCard = ({ member }: { member: Record<string, string> }) => {
                 <h3 className="text-xl font-semibold text-white mb-1">
                     {member.name}
                 </h3>
-                <p className="text-amber-400 font-medium text-sm mb-3">
+                <p className="text-emerald-400 font-medium text-sm mb-3">
                     {member.position}
                 </p>
                 <p className="text-gray-200 text-sm">{member.bio}</p>

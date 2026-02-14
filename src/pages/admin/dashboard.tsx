@@ -47,7 +47,7 @@ const AdminDashboardPage: NextPage = () => {
             <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="">
                     <h1
-                        className={`text-2xl font-extrabold text-amber-900 mb-2`}
+                        className={`text-2xl font-extrabold text-emerald-900 mb-2`}
                     >
                         Dashboard Admin
                     </h1>
@@ -57,7 +57,7 @@ const AdminDashboardPage: NextPage = () => {
                 </div>
                 <Link
                     href="/"
-                    className="px-4 py-2 bg-amber-100 text-amber-800 rounded-md hover:bg-amber-200 inline-flex items-center"
+                    className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-md hover:bg-emerald-200 inline-flex items-center"
                 >
                     <Home className="h-4 w-4 mr-2" />
                     Kembali ke Beranda
@@ -66,7 +66,7 @@ const AdminDashboardPage: NextPage = () => {
 
             {isLoading ? (
                 <div className="flex justify-center items-center h-64">
-                    <Loader2 className="h-8 w-8 animate-spin text-amber-600" />
+                    <Loader2 className="h-8 w-8 animate-spin text-emerald-600" />
                 </div>
             ) : (
                 <>
@@ -83,9 +83,9 @@ const AdminDashboardPage: NextPage = () => {
                             title="Total Reservasi"
                             value={dashboardStats?.totalBookings || 0}
                             icon={
-                                <CalendarClock className="h-5 w-5 text-amber-600" />
+                                <CalendarClock className="h-5 w-5 text-emerald-600" />
                             }
-                            iconBg="bg-amber-100"
+                            iconBg="bg-emerald-100"
                             link="/admin/bookings"
                         />
                         <StatCard
@@ -164,7 +164,7 @@ const AdminDashboardPage: NextPage = () => {
                                 </h2>
                                 <Link
                                     href="/admin/bookings"
-                                    className="text-sm font-medium text-amber-600 hover:text-amber-800 flex items-center"
+                                    className="text-sm font-medium text-emerald-600 hover:text-emerald-800 flex items-center"
                                 >
                                     <span>Lihat semua</span>
                                     <ChevronRight className="ml-1 h-4 w-4" />
@@ -213,7 +213,7 @@ const AdminDashboardPage: NextPage = () => {
                                 </h2>
                                 <Link
                                     href="/admin/orders"
-                                    className="text-sm font-medium text-amber-600 hover:text-amber-800 flex items-center"
+                                    className="text-sm font-medium text-emerald-600 hover:text-emerald-800 flex items-center"
                                 >
                                     <span>Lihat semua</span>
                                     <ChevronRight className="ml-1 h-4 w-4" />

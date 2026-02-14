@@ -43,7 +43,7 @@ const NewBookingPage: NextPage = () => {
             </Head>
 
             {/* Booking Form Section */}
-            <section className="py-12 px-4 bg-amber-50">
+            <section className="py-12 px-4 bg-emerald-50">
                 <div className="container mx-auto max-w-6xl">
                     <div className="flex flex-col lg:flex-row lg:space-x-8">
                         {/* Booking Form Column */}
