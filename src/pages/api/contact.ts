@@ -32,7 +32,7 @@ export default async function handler(
         console.log("---");
 
         // Simpan ke database
-        await (prisma as any).contact.create({
+        await prisma.contact.create({
             data: {
                 name: validatedData.name,
                 email: validatedData.email,
