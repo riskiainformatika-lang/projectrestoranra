@@ -20,10 +20,8 @@ export default async function handler(
     }
 
     try {
-        // Validasi input
         const validatedData = contactSchema.parse(req.body);
 
-        // Log pesan ke console
         console.log("📧 Pesan Kontak Diterima:");
         console.log("Nama:", validatedData.name);
         console.log("Email:", validatedData.email);
@@ -31,15 +29,14 @@ export default async function handler(
         console.log("Pesan:", validatedData.message);
         console.log("---");
 
-        // Simpan ke database
-await prisma.contact.create({
-    data: {
-        name: validatedData.name,
-        email: validatedData.email,
-        subject: validatedData.subject,
-        message: validatedData.message,
-    },
-});
+        await prisma.contact.create({
+            data: {
+                name: validatedData.name,
+                email: validatedData.email,
+                subject: validatedData.subject,
+                message: validatedData.message,
+            },
+        });
 
         return res.status(200).json({
             success: true,
