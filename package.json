@@ -33,7 +33,7 @@
         "react": "^19.2.4",
         "react-datepicker": "^8.3.0",
         "react-dom": "^19.2.4",
-        "react-email": "^4.0.7",
+        "react-email": "^5.2.8",
         "react-hook-form": "^7.55.0",
         "react-hot-toast": "^2.5.2",
         "recharts": "^2.15.3",
